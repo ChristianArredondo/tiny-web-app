@@ -20,7 +20,7 @@ The server uses either the `MONGODB_URI` env variable, or defaults to `mongodb:/
 // start server
 cd path/to/tiny-server/
 npm install
-npm run
+npm run start
 ```
 Server is running as expected if you see logs for connecting to MongoDB and running on port. You can make a GET request to `localhost:8080/api/ping` to verify a response.
 
@@ -30,6 +30,6 @@ Server is running as expected if you see logs for connecting to MongoDB and runn
 // start client
 cd path/to/tiny-client/
 npm install
-npm run
+npm run start
 ```
 Client is running as expected if the app opens and you see "pong" in the console.
