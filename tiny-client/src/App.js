@@ -7,7 +7,7 @@ function App() {
 
   const makePingAPIRequest = () => {
     fetch('http://localhost:8080/api/ping')
-      .then(res => res.text())
+      .then(res => res.json())
       .then(resText => console.log(resText));
   };
 
