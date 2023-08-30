@@ -33,7 +33,9 @@ MongoClient.connect(mongoDBAddress).then(mongoClient => {
 
     // ***API: PING***
     app.get('/api/ping', (_, res) => {
-        res.send('pong');
+        res.send({
+            message: 'data'
+        });
     });
 }).catch(err => {
     console.error('Unable to connect to MongoDB.', err);
