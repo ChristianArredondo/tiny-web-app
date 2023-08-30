@@ -34,7 +34,7 @@ MongoClient.connect(mongoDBAddress).then(mongoClient => {
     // ***API: PING***
     app.get('/api/ping', (_, res) => {
         res.send({
-            message: 'data'
+            message: 'pong'
         });
     });
 }).catch(err => {
